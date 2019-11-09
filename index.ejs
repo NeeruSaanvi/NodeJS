@@ -1,0 +1,48 @@
+<% include ./header %>
+
+<h1 class="text-center">Login As <%= loginUser.user %></h1>
+<h1 class="text-center" id="msgBy"></h1>
+
+<table width="100%"  border="1">
+<!--
+ <tr>
+  <td>
+   <select style="" class="myCombo" name="network">
+    <option>ROADKING</option>
+    <option>FAMILY</option>
+   </select>
+  </td>
+ </tr> -->
+
+ <tr>
+  <td>
+    <div style="padding:20px " align="center">
+   <select id="user_select" name="user_select" multiple="multiple">
+    <!-- <option value="0">Select User</option> -->
+    <% loginUser.usersOnline.forEach(function(name){ %>  
+      <option value="<%= name %>"><%= name %></option>
+      <% }); %>
+   </select>
+  </td>
+ </tr>
+ <!-- 
+ <tr>
+  <td id="user_select_box">
+   <select style="" class="myCombo" id="user_select" name="user_select">
+      <option value="all_group">Select User</option>      
+   </select>
+  </td>
+ </tr> -->
+ 
+</table>
+
+<p>&nbsp;</p>
+<p class="auto-style1">
+  <img id="pttImage" height="256" src="https://walkytalky-live.com:3334/image/start.png" width="256"  />
+  <img id="stopImage" style="display:none" height="256" src="https://walkytalky-live.com:3334/image/stop.png" width="256"  />
+ </p>
+<p class="auto-style1">&nbsp;</p>
+
+   <div id="talkingToResult" style="display:none"></div>
+ <% include ./footer %>
+

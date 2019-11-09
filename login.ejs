@@ -1,0 +1,19 @@
+<% include ./header %>
+
+<div class="container app">
+    <div class="row app-one">
+      <div class="col-sm-12">
+        Login As
+		<form type="POST" action="/">
+			<select name="user_id">
+			<% users.forEach(function(user){ %> 
+				<option value="<%= user.id %>"><%= user.name %></option>
+			<% }); %>	
+			</select>
+			<input type="submit"/>
+		</form>
+      </div>
+    </div>
+    <!-- App One End -->
+</div>
+<% include ./footer %>

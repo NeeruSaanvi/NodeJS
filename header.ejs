@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="en-ca" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>PUSH to TALK</title>
+    <script async src="//jsfiddle.net/pmrotule/w7aakdbb/embed/"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.1.js"></script> -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <!--  <script src="https://www.AirRevive-live.com/p5/myLibrary/pttInitGlobal.js"></script> 
+<script src="https://www.AirRevive-live.com/js/ptt_library.js"></script>
+    -->
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+    <style type="text/css">
+    .myCombo {
+        font-size: 2em;
+        font-family: Arial,
+            Helvetica, sans-serif;
+        width: 90%
+    }
+
+    .multiselect-container>li>a>label {
+        padding: 4px 20px 3px 20px;
+    }
+
+    .auto-style1 {
+        text-align: center;
+    }
+
+    body {
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer */
+        -khtml-user-select: none;
+        /* KHTML browsers (e.g. Konqueror) */
+        -webkit-user-select: none;
+        /* Chrome, Safari, and Opera */
+        -webkit-touch-callout: none;
+        /* Disable Android and iOS callouts*/
+    }
+    </style>
+</head>
+
+<body>
